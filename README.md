@@ -31,3 +31,29 @@ An `LLMTool` is a specialized tool that allows agents to interact with language 
 ### Semantic Search
 
 Semantic Search is a feature that leverages VectorDB for enhanced information retrieval. Agents can use Semantic Search to search for and retrieve relevant data and knowledge from both short-term and long-term memory. This capability supports informed decision-making by providing access to pertinent information.
+
+# MultiAgentNet Framework Advantages
+
+1. **Modularity and Separation of Concerns:**
+   - The framework's modular design ensures that each component has a distinct responsibility, making it easier to maintain, extend, and understand. The SOP manages the agent's behavior and transitions between states, while the Environment handles the observation and modification of the environment. This separation promotes clarity and maintainability. Separating SOP and States allows for easier modification and extension of the agent's behavior. You can add or change states and define different SOPs without altering the core Environment logic. This modularity facilitates the development of diverse agent behaviors and strategies.
+
+2. **Flexibility:**
+   - It allows for the definition of different agents with various tools and behaviors, making it adaptable to a wide range of scenarios.
+
+3. **Intelligent Tool Selection:**
+   - The Language Model Manager (LLM) enables intelligent tool selection for AI agents, enhancing their decision-making capabilities based on observations.
+
+4. **Memory Management:**
+   - The framework supports both short-term and long-term memory management, aiding in retaining and retrieving information, which is crucial for agent behavior.
+
+5. **Semantic Search Integration:**
+   - Integration of semantic search enhances the capabilities of agents in recalling and utilizing past experiences and actions.
+
+6. **Human and AI Interaction:**
+   - The ability to configure agents as both human and AI promotes versatile simulations and interactions with the environment.
+
+7. **Structured Agent Behavior:**
+   - The Standard Operating Procedure (SOP) class structures agent behavior, allowing for the definition of states and their transitions, providing a clear path for implementing complex strategies.
+
+8. **Simulation Control:**
+   - The Moderator class manages the simulation's control flow, making it easy to run and manage simulations with multiple agents.
