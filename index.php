@@ -1,5 +1,12 @@
 <?php
 //Include Environment,SOP,State,LLM,Semantic Search,Tool,Agent
+require_once 'src/Agent.php';
+require_once 'src/SOP.php';
+require_once 'src/State.php';
+require_once 'src/Environment.php';
+require_once 'src/LLM.php';
+require_once 'src/Tool.php';
+require_once 'src/SemanticSearch.php';
 $environment = new Environment(/* provide components */);
 $sop = new SOP();
 $llm = new LLM(); // Initialize the Language Model Manager
