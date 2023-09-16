@@ -13,8 +13,8 @@ class Environment {
         return $this->describer->describe($agent);
     }
 
-    public function update($agent, $action) {
+    public function update($agents,$agent, $action) {
         // Use the updater to update the agent's memory based on the action
-        $this->updater->update($agent, $action);
+        $this->updater->updateMemories($agents,$agent, $action);
     }
 }
