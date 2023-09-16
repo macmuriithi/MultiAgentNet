@@ -55,6 +55,12 @@ class Agent {
         $this->semanticSearch->index($this->longTermMemory);
     }
 
+    public function updateMemory($action) {
+        // Store the action in long-term memory
+        $this->storeLongTermMemory($action);
+        // You can also update short-term memory here if needed
+    }
+
     public function getLongTermMemory() {
         // Retrieve the long-term memory using Semantic Search
         return $this->semanticSearch->search($this->longTermMemory);
